@@ -1,0 +1,1 @@
+time	hiveTemp	hiveHumidity	hivePressure	weatherTemp	weatherHumidity	weatherPressure	windSpeed	gustSpeed	weatherID	cloudCoverage	rain1h	lat	long	filename.raw
