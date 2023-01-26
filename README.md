@@ -7,9 +7,13 @@ The “i2s_sampling” folder holds the code that is loaded onto the ESP32 and c
   
 The “server” folder contains the program that the server runs on. Additional data was also pulled from OpenWeatherMap API, which acquired ambient humidity, pressure, cloudiness, precipitation, temperature, wind speed, and gust speed based on the location of the device. Once the server is started, the ESP32 can be plugged into any USB power source to begin data collection immediately.  
   
-The code for the device was largely derived from atomic14's code on GitHub (https://github.com/atomic14/esp32_audio), with changes to accomodate the needs of the project.
+The code for the device was largely derived from [atomic14's code on GitHub](https://github.com/atomic14/esp32_audio), with changes to accomodate the needs of the project.
 
 ## Data Processing
+Most of the data processing code was written by myself, including: compiling the data into a csv, labeling each data sample, converting the .raw files to .wav files,  
 
+To segment the audio files into 60 second intervals and convert the samples into MFCCs, I used [inesnola's code on GitHub](https://github.com/inesnolas/Audio_based_identification_beehive_states), which was published as part of the paper “Audio-based beehive state recognition” (Nolasco, 2018).
+
+Split into test, train, val derived
 
 ## Machine Learning
