@@ -12,8 +12,6 @@ The code for the device was largely derived from [atomic14's code on GitHub](htt
 ## Data Processing
 Most of the data processing code was written by myself, including: compiling the data into a csv, labeling each data sample, converting the .raw files to .wav files,  
 
-To segment the audio files into 60 second intervals and convert the samples into MFCCs, I used [inesnola's code on GitHub](https://github.com/inesnolas/Audio_based_identification_beehive_states), which was published as part of the paper “Audio-based beehive state recognition” (Nolasco, 2018).
-
-Split into test, train, val derived
+To segment the audio files into 60 second intervals and convert the samples into MFCCs, I used [inesnola's code on GitHub](https://github.com/inesnolas/Audio_based_identification_beehive_states), which was published as part of the paper “Audio-based beehive state recognition” (Nolasco, 2018). This code is located in the folder "Beehive_state_classification," in the files "utilsBeehiveState.py, "data_processing.py," "tests_.py," and "data_processing_beeNotbee.py." The code in these files were edited by me to fit the necessities of my project. The rest of the code in that folder is my own, with segments taken from Nolasco's work to split the data into test, train, and val sets by ratios.
 
 ## Machine Learning
