@@ -17,3 +17,4 @@ To segment the audio files into 60 second intervals and convert the samples into
 The rest of the code in that folder is my own, with segments taken from Nolasco's work to split the data into test, train, and val sets by ratios.
 
 ## Machine Learning
+All of the machine learning code was written by me, and it is all of the files in the folder "Beehive_state_classification," aside from those mentioned above for the data processing.
